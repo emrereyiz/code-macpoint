@@ -1,5 +1,5 @@
 # code-macpoint
-Personal web site. PSD to HTML. I'm using with task manager and a few modules clean design development.
+Personal web site. PSD to HTML. I'm using with task manager and a few modules for clean design development.
 
 Bower
 Grunt
