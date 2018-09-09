@@ -1,6 +1,13 @@
 module.exports = function(grunt) {
   require('jit-grunt')(grunt);
   grunt.initConfig({
+    watch: {
+      files: [
+        '_assets/css/less/**.less',
+        '_assets/js/custom/**.js',
+      ],
+      tasks: ['less', 'concat'],
+    },
     less: {
       development: {
         options: {
@@ -18,17 +25,10 @@ module.exports = function(grunt) {
 	      separator: ';',
 	    },
 	    dist: {
-	      src: ['bower_components/jquery/dist/jquery.min.js', 'bower_components/bootstrap/dist/js/bootstrap.min.js', '_assets/js/custom/macpoint-custom.js'],
+	      src: ['bower_components/jquery/dist/jquery.min.js', 'bower_components/bootstrap/dist/js/bootstrap.min.js', 'bower_components/swiper/dist/js/swiper.js', '_assets/js/custom/macpoint-custom.js'],
 	      dest: '_assets/js/macpoint.js',
 	    },
   	},
-    watch: {
-      files: [
-        '_assets/css/less/**.less',
-        '_assets/js/custom/**.js',
-        '**.html'
-      ]
-    },
     browserSync: {
         dev: {
             bsFiles: {
@@ -48,6 +48,6 @@ module.exports = function(grunt) {
   });
 
 
-  grunt.registerTask('default', ['less', 'concat',  'browserSync', 'watch',]);
+  grunt.registerTask('default', ['less', 'concat', 'browserSync', 'watch']);
 
 };

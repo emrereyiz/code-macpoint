@@ -2,13 +2,15 @@
 <html>
 <head>
 	<title>MacPoint</title>
-	<link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap-grid.css">
 	<link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap-grid.css">
+	<link rel="stylesheet" type="text/css" href="bower_components/swiper/dist/css/swiper-min.css">
+	<link rel="stylesheet" type="text/css" href="_assets/css/macpoint.css">
 </head>
 <body>
 	<header>
 		<div class="container">
-			<a id="logo"><img src="" alt="#"></a>
+			<a id="logo"><img src="_assets/img/logo.png" alt="#"></a>
 			<nav>
 				<a href="">HAKKIMIZDA</a>
 				<a href="">HİZMETLER</a>
@@ -21,20 +23,178 @@
 	<article>
 		<section class="slide-section">
 			<div class="container">
+
+<div class="swiper-container">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">Slide 1</div>
+        <div class="swiper-slide">Slide 2</div>
+        <div class="swiper-slide">Slide 3</div>
+        ...
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+
+    <!-- If we need scrollbar -->
+    <div class="swiper-scrollbar"></div>
+</div>
 				<div class="slide-wrap">
 					<div class="slide-item">
 						<h5>MacBook Pro</h5>
 						<h6>Dahiyane bir dokunuş.</h6>
 						<p>Ultra ince, olağanüstü hafif ve her zamankinden çok daha hızlı, çok daha güçlü. Şimdiye kadarki en canlı, en renkli Mac dizüstü bilgisayar ekranına sahip.</p>
-						<img src="" alt="#">
+						<img src="/_assets/img/main-slide.jpg" alt="#">
 					</div>
 				</div>
-				<a href="#">DETAYLI BİLGİ
-					<span class="prev"></span>
-					<span class="next"></span>
-				</a>
+				<div class="clearfix"></div>
+				<a href="#"><span class="text">DETAYLI BİLGİ</span><span class="prev"></span><span class="next"></span></a>
+			</div>
+		</section>
+		<section class="three-boxs">
+			<div class="container">
+				<div class="row">
+					<div class="col-4 box-item">
+						<div class="image-wrap">
+							<img src="_assets/img/box-image.png" alt="" />
+						</div>
+						<h3>Fast Processor</h3>
+						<p>The eighth-generation Intel Core processors the MacBook Pro's processing performance reaches a whole new level.</p>
+					</div>
+					<div class="col-4 box-item">
+						<div class="image-wrap">
+							<img src="_assets/img/box-image.png" alt="" />
+						</div>
+						<h3>Fast Processor</h3>
+						<p>The eighth-generation Intel Core processors the MacBook Pro's processing performance reaches a whole new level.</p>
+					</div>
+					<div class="col-4 box-item">
+						<div class="image-wrap">
+							<img src="_assets/img/box-image.png" alt="" />
+						</div>
+						<h3>Fast Processor</h3>
+						<p>The eighth-generation Intel Core processors the MacBook Pro's processing performance reaches a whole new level.</p>
+					</div>
+			</div>
+			</div>
+		</section>
+		<section class="slide-section-middle">
+			<div class="container">
+				<h2>Store</h2>
+					<div class="slide-arrow">
+						<span class="prev"></span>
+						<span class="next"></span>
+					</div>
+					<div class="slide-wrap">
+						<div class="slide-item">
+							<div class="row">
+								<div class="box-item">
+									<div class="box">
+										<img src="_assets/img/box-image-02.jpg" alt="" />
+										<h3>iMac</h3>
+										<p>Ultra ince, olağanüstü hafif ve her zamankinden çok daha hızlı, çok daha güçlü. Şimdiye kadarki en canlı, en renkli Mac dizüstü bilgisayar ekranına sahip.</p>
+										<a href="#">Detaylı Bilgi</a>
+									</div>
+								</div>
+								<div class="box-item">
+									<div class="box">
+										<img src="_assets/img/box-image-02.jpg" alt="" />
+										<h3>iMac</h3>
+										<p>Ultra ince, olağanüstü hafif ve her zamankinden çok daha hızlı, çok daha güçlü. Şimdiye kadarki en canlı, en renkli Mac dizüstü bilgisayar ekranına sahip.</p>
+										<a href="#">Detaylı Bilgi</a>
+									</div>
+								</div>
+								<div class="box-item">
+									<div class="box">
+										<img src="_assets/img/box-image-02.jpg" alt="" />
+										<h3>iMac</h3>
+										<p>Ultra ince, olağanüstü hafif ve her zamankinden çok daha hızlı, çok daha güçlü. Şimdiye kadarki en canlı, en renkli Mac dizüstü bilgisayar ekranına sahip.</p>
+										<a href="#">Detaylı Bilgi</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+			</div>
+		</section>
+		<section class="image-wrap">
+			<div class="container">
+				<img src="_assets/img/bottom-image.png" alt="" />
+				<h2>Teknik Destek Hizmeti</h2>
+				<p>Tüm apple ürünleriniz için teknik destek ve yedek parça hizmeti.</p>
+				<a href="#">Detaylı Bilgi</a>
+			</div>
+		</section>
+		<section class="slide-section-bottom">
+			<div class="container">
+				<div class="row">
+					<div class="col-4 left-wrap">
+						<h3>Blog</h3>
+						<p>Apple kullanıcılarının sıklıkla karşılaştıkları sorunlar ve çözümleri..</p>
+					</div>
+					<div class="col-8 right-wrap">
+						<div class="slide-arrow">
+							<span class="prev"></span>
+							<span class="next"></span>
+						</div>
+						<div class="clearfix"></div>
+						<div class="slide-wrap">
+							<div class="slide-item">
+								<h4>Sorun ne zaman başladı?</h4>
+								<p>Sorunun nedeni olabileceği için bilgisayardaki ve yazılımındaki son değişiklikleri not edin. Yeni yazılım veya donanım yüklenmiş miydi?</p>
+							</div>
+						</div>
+					</div>
+					<a href="#">Tüm Konular</a>
+				</div>
 			</div>
 		</section>
 	</article>
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-4">
+					<h4>Store</h4>
+					<ul>
+						<li><a href="#">Mac Pro</a></li>
+						<li><a href="#">iMac</a></li>
+						<li><a href="#">MacBook Pro</a></li>
+						<li><a href="#">MacBook Air</a></li>
+						<li><a href="#">MacBook</a></li>
+						<li><a href="#">Mac Mini</a></li>
+						<li><a href="#">iPad</a></li>
+						<li><a href="#">iPhone</a></li>
+						<li><a href="#">Aksesuar</a></li>
+					</ul>
+				</div>
+				<div class="col-4">
+					<h4>Teknik Servis</h4>
+					<ul>
+						<li><a href="#">Mac Pro</a></li>
+						<li><a href="#">iMac</a></li>
+						<li><a href="#">MacBook Pro</a></li>
+						<li><a href="#">MacBook Air</a></li>
+						<li><a href="#">MacBook</a></li>
+						<li><a href="#">Mac Mini</a></li>
+						<li><a href="#">iPad</a></li>
+						<li><a href="#">iPhone</a></li>
+						<li><a href="#">Aksesuar</a></li>
+					</ul>
+				</div>
+				<div class="col-4">
+					<h4>MacPoint</h4>
+					<p>Gülbahar Mah. Cemal Sururi Sok. No:4/2 Şişli-Mecdiyeköy / İSTANBUL</p>
+				</div>
+			</div>
+			<a href="#" class="iPhone">+90 (552) 236 13 17</a>
+			<a href="#" class="iPhone">+90 (212) 274 06 07</a>
+			<p class="copy-right">Copyright  © 2018 MacPoint. All Rights Reserved</p>
+		</div>
+	</footer>
+	<script type="text/javascript" src="_assets/js/macpoint.js"></script>
 </body>
 </html>
