@@ -42,10 +42,10 @@ article{
 		}
 
 		&.slide-section{
-
+			position: relative;
 			.slide-wrap{
 				margin:330px 0 0 0;
-				width: 50%;
+				width: 100%;
 				float: left;
 				.slide-item{
 					h5,h6,p{
@@ -59,11 +59,36 @@ article{
 					img{
 						position: absolute;
 						right: 0;
-						top:0;
+						top:-410px;
 						width: 1100px;
 					}
 				}
+
+				position: static;
+				overflow: visible;
+
+				.swiper-wrapper{
+					position: static;
+					overflow: visible;
+					.swiper-slide{
+						&:not(.swiper-slide-active){
+							opacity: 0 !important;
+						}
+						.text-wrap{
+							width: 50%;
+						}
+
+						.animated{
+							opacity: 0;
+						}
+					}
+				}
+
+
 			}
+				.custom-pagi{
+					display: none;
+				}
 			a{
 				width: 415px;
 				height: 100%;
@@ -83,12 +108,15 @@ article{
 					width: 105px;
 					display: inline-block;
 
+
 					&.text{
 						width: auto;
 						float: left;
 						margin:28px 0;
 						padding-left: 40px;
 						font-size:22px;
+						position: absolute;
+						left:0;
 					}
 
 					&.prev,
@@ -99,6 +127,7 @@ article{
 						padding:30px 0;
 						cursor: pointer;
 						background: @c-white center center no-repeat;
+						float:right;
 					}
 
 					&.prev{
@@ -109,6 +138,10 @@ article{
 						border-left:solid 1px @c-gray4;
 						background-image:url('/_assets/img/arrow-right.png');
 					}
+
+
+
+
 				}
 			}
 		}
