@@ -4,7 +4,8 @@
 	<title>MacPoint</title>
 	<link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap-grid.css">
-	<link rel="stylesheet" type="text/css" href="bower_components/swiper/dist/css/swiper-min.css">
+	<link rel="stylesheet" type="text/css" href="bower_components/swiper/dist/css/swiper.min.css">
+	<link rel="stylesheet" type="text/css" href="bower_components/animate.css/animate.min.css">
 	<link rel="stylesheet" type="text/css" href="_assets/css/macpoint.css">
 </head>
 <body>
@@ -22,38 +23,45 @@
 	</header>
 	<article>
 		<section class="slide-section">
-			<div class="container">
 
-<div class="swiper-container">
-    <!-- Additional required wrapper -->
-    <div class="swiper-wrapper">
-        <!-- Slides -->
-        <div class="swiper-slide">Slide 1</div>
-        <div class="swiper-slide">Slide 2</div>
-        <div class="swiper-slide">Slide 3</div>
-        ...
-    </div>
-    <!-- If we need pagination -->
-    <div class="swiper-pagination"></div>
 
-    <!-- If we need navigation buttons -->
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-button-next"></div>
+				<div class="slide-wrap swiper-container">
+				    <!-- Additional required wrapper -->
+				    <div class="swiper-wrapper">
+				        <!-- Slides -->
 
-    <!-- If we need scrollbar -->
-    <div class="swiper-scrollbar"></div>
-</div>
-				<div class="slide-wrap">
-					<div class="slide-item">
-						<h5>MacBook Pro</h5>
-						<h6>Dahiyane bir dokunuş.</h6>
-						<p>Ultra ince, olağanüstü hafif ve her zamankinden çok daha hızlı, çok daha güçlü. Şimdiye kadarki en canlı, en renkli Mac dizüstü bilgisayar ekranına sahip.</p>
-						<img src="/_assets/img/main-slide.jpg" alt="#">
-					</div>
+						<div class="swiper-slide slide-item">
+							<div class="container">
+								<div class="text-wrap">
+									<h5 class="animated" data-animate-type="fadeInLeft" data-time="100" >MacBook Pro</h5>
+									<h6 class="animated" data-animate-type="fadeInLeft" data-time="400" >Dahiyane bir dokunuş.</h6>
+									<p class="animated" data-animate-type="fadeInLeft" data-time="700" >Ultra ince, olağanüstü hafif ve her zamankinden çok daha hızlı, çok daha güçlü. Şimdiye kadarki en canlı, en renkli Mac dizüstü bilgisayar ekranına sahip.</p>
+								</div>
+							</div>
+							<img  class="animated" data-animate-type="fadeIn" data-time="900" src="/_assets/img/main-slide.jpg" alt="#">
+						</div>
+
+						<div class="swiper-slide slide-item">
+							<div class="container">
+								<div class="text-wrap">
+									<h5 class="animated" data-animate-type="fadeInLeft" data-time="100" >MacBook Pro 2</h5>
+									<h6 class="animated" data-animate-type="fadeInLeft" data-time="400" >test</h6>
+									<p class="animated" data-animate-type="fadeInLeft" data-time="700" >Test text</p>
+								</div>
+							</div>
+							<img  class="animated" data-animate-type="fadeIn" data-time="900" src="/_assets/img/main-slide.jpg" alt="#">
+						</div>
+				    </div>
+
+				    <!-- If we need navigation buttons -->
+				    <div class="swiper-button-prev custom-pagi"></div>
+				    <div class="swiper-button-next custom-pagi"></div>
+
 				</div>
 				<div class="clearfix"></div>
-				<a href="#"><span class="text">DETAYLI BİLGİ</span><span class="prev"></span><span class="next"></span></a>
-			</div>
+				<div class="container">
+					<a href="#"><span class="text">DETAYLI BİLGİ</span><span class="next"></span><span class="prev"></span></a>
+				</div>
 		</section>
 		<section class="three-boxs">
 			<div class="container">
@@ -89,33 +97,90 @@
 						<span class="prev"></span>
 						<span class="next"></span>
 					</div>
-					<div class="slide-wrap">
+					<div class="slide-wrap swiper-container">
+
 						<div class="slide-item">
 							<div class="row">
-								<div class="box-item">
-									<div class="box">
-										<img src="_assets/img/box-image-02.jpg" alt="" />
-										<h3>iMac</h3>
-										<p>Ultra ince, olağanüstü hafif ve her zamankinden çok daha hızlı, çok daha güçlü. Şimdiye kadarki en canlı, en renkli Mac dizüstü bilgisayar ekranına sahip.</p>
-										<a href="#">Detaylı Bilgi</a>
+								<div class="swiper-wrapper">
+									
+									<div class="box-item swiper-slide">
+										<div class="box">
+											<img src="_assets/img/box-image-02.jpg" alt="" />
+											<h3>iMac</h3>
+											<p>Ultra ince, olağanüstü hafif ve her zamankinden çok daha hızlı, çok daha güçlü. Şimdiye kadarki en canlı, en renkli Mac dizüstü bilgisayar ekranına sahip.</p>
+											<a href="#">Detaylı Bilgi</a>
+										</div>
+									</div>
+									<div class="box-item swiper-slide">
+										<div class="box">
+											<img src="_assets/img/box-image-02.jpg" alt="" />
+											<h3>iMac</h3>
+											<p>Ultra ince, olağanüstü hafif ve her zamankinden çok daha hızlı, çok daha güçlü. Şimdiye kadarki en canlı, en renkli Mac dizüstü bilgisayar ekranına sahip.</p>
+											<a href="#">Detaylı Bilgi</a>
+										</div>
+									</div>
+									<div class="box-item swiper-slide">
+										<div class="box">
+											<img src="_assets/img/box-image-02.jpg" alt="" />
+											<h3>iMac</h3>
+											<p>Ultra ince, olağanüstü hafif ve her zamankinden çok daha hızlı, çok daha güçlü. Şimdiye kadarki en canlı, en renkli Mac dizüstü bilgisayar ekranına sahip.</p>
+											<a href="#">Detaylı Bilgi</a>
+										</div>
+									</div>
+									
+									<div class="box-item swiper-slide">
+										<div class="box">
+											<img src="_assets/img/box-image-02.jpg" alt="" />
+											<h3>iMac</h3>
+											<p>Ultra ince, olağanüstü hafif ve her zamankinden çok daha hızlı, çok daha güçlü. Şimdiye kadarki en canlı, en renkli Mac dizüstü bilgisayar ekranına sahip.</p>
+											<a href="#">Detaylı Bilgi</a>
+										</div>
+									</div>
+									<div class="box-item swiper-slide">
+										<div class="box">
+											<img src="_assets/img/box-image-02.jpg" alt="" />
+											<h3>iMac</h3>
+											<p>Ultra ince, olağanüstü hafif ve her zamankinden çok daha hızlı, çok daha güçlü. Şimdiye kadarki en canlı, en renkli Mac dizüstü bilgisayar ekranına sahip.</p>
+											<a href="#">Detaylı Bilgi</a>
+										</div>
+									</div>
+									<div class="box-item swiper-slide">
+										<div class="box">
+											<img src="_assets/img/box-image-02.jpg" alt="" />
+											<h3>iMac</h3>
+											<p>Ultra ince, olağanüstü hafif ve her zamankinden çok daha hızlı, çok daha güçlü. Şimdiye kadarki en canlı, en renkli Mac dizüstü bilgisayar ekranına sahip.</p>
+											<a href="#">Detaylı Bilgi</a>
+										</div>
+									</div>
+									
+									<div class="box-item swiper-slide">
+										<div class="box">
+											<img src="_assets/img/box-image-02.jpg" alt="" />
+											<h3>iMac</h3>
+											<p>Ultra ince, olağanüstü hafif ve her zamankinden çok daha hızlı, çok daha güçlü. Şimdiye kadarki en canlı, en renkli Mac dizüstü bilgisayar ekranına sahip.</p>
+											<a href="#">Detaylı Bilgi</a>
+										</div>
+									</div>
+									<div class="box-item swiper-slide">
+										<div class="box">
+											<img src="_assets/img/box-image-02.jpg" alt="" />
+											<h3>iMac</h3>
+											<p>Ultra ince, olağanüstü hafif ve her zamankinden çok daha hızlı, çok daha güçlü. Şimdiye kadarki en canlı, en renkli Mac dizüstü bilgisayar ekranına sahip.</p>
+											<a href="#">Detaylı Bilgi</a>
+										</div>
+									</div>
+									<div class="box-item swiper-slide">
+										<div class="box">
+											<img src="_assets/img/box-image-02.jpg" alt="" />
+											<h3>iMac</h3>
+											<p>Ultra ince, olağanüstü hafif ve her zamankinden çok daha hızlı, çok daha güçlü. Şimdiye kadarki en canlı, en renkli Mac dizüstü bilgisayar ekranına sahip.</p>
+											<a href="#">Detaylı Bilgi</a>
+										</div>
 									</div>
 								</div>
-								<div class="box-item">
-									<div class="box">
-										<img src="_assets/img/box-image-02.jpg" alt="" />
-										<h3>iMac</h3>
-										<p>Ultra ince, olağanüstü hafif ve her zamankinden çok daha hızlı, çok daha güçlü. Şimdiye kadarki en canlı, en renkli Mac dizüstü bilgisayar ekranına sahip.</p>
-										<a href="#">Detaylı Bilgi</a>
-									</div>
-								</div>
-								<div class="box-item">
-									<div class="box">
-										<img src="_assets/img/box-image-02.jpg" alt="" />
-										<h3>iMac</h3>
-										<p>Ultra ince, olağanüstü hafif ve her zamankinden çok daha hızlı, çok daha güçlü. Şimdiye kadarki en canlı, en renkli Mac dizüstü bilgisayar ekranına sahip.</p>
-										<a href="#">Detaylı Bilgi</a>
-									</div>
-								</div>
+							    <!-- If we need navigation buttons -->
+							    <div class="swiper-button-prev-2 custom-pagi"></div>
+							    <div class="swiper-button-next-2 custom-pagi"></div>
 							</div>
 						</div>
 					</div>
