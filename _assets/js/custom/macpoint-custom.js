@@ -100,11 +100,14 @@ var macPoint = {
     });
 
   },
+  wowInit: function(){
+  },  
   subInit: function(){
     this.swipe();
     this.oneLine();
     this.animate.slideAnimate();
     this.animate.pageAnimate();
+    this.wowInit();
   },
   init: function(){
     this.subInit();
