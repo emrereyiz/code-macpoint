@@ -14,11 +14,26 @@
 		<div class="container">
 			<a href="/index.html" id="logo" class="animate" data-type="fadeIn" data-time="100">MacPoint</a>
 			<nav>
-				<a href="detail.html" class="animate" data-type="fadeInDown" data-time="200">HAKKIMIZDA</a>
-				<a href="detail.html" class="animate" data-type="fadeInDown" data-time="300">HİZMETLER</a>
-				<a href="landing.html" class="animate" data-type="fadeInDown" data-time="400">STORE</a>
-				<a href="blog.html" class="animate" data-type="fadeInDown" data-time="500">TEKNİK SERVİS</a>
-				<a href="iletisim.html" class="animate" data-type="fadeInDown" data-time="600">İLETİŞİM</a>
+				<ul>
+					<li><a href="blog.html" class="animate" data-type="fadeInDown" data-time="200">HAKKIMIZDA</a></li>
+					<li><a href="detail.html" class="animate" data-type="fadeInDown" data-time="300">HİZMETLER</a></li>
+					<li class="has-sub">
+						<a href="landing.html" class="animate" data-type="fadeInDown" data-time="400">STORE</a>
+						<img src="/_assets/img/arrow-down02.png">
+							<ul>
+								<li><a href="#">iMac</a></li>
+								<li><a href="#">Mac Pro</a></li>
+								<li><a href="#">MacBook Pro</a></li>
+								<li><a href="#">MacBook Air</a></li>
+								<li><a href="#">MacBook</a></li>
+								<li><a href="#">Mac Mini</a></li>
+								<li><a href="#">iPad</a></li>
+								<li><a href="#">Aksesuar</a></li>
+							</ul>
+					</li>
+					<li><a href="teknik-servis.html" class="animate" data-type="fadeInDown" data-time="500">TEKNİK SERVİS</a></li>
+					<li><a href="iletisim.html" class="animate" data-type="fadeInDown" data-time="600">İLETİŞİM</a></li>
+				</ul>
 			</nav>
 		</div>
 	</header>
@@ -61,32 +76,43 @@
 				</div>
 				<div class="clearfix"></div>
 				<div class="container animate" data-type="fadeInDown" data-time="600">
-					<a href="#"><span class="text">DETAYLI BİLGİ</span><span class="next"></span><span class="prev"></span></a>
+					<a href="#">
+						<span class="text">DETAYLI BİLGİ</span><span class="next">
+						<img src="_assets/img/arrow-right.png" alt="" />
+					</span><span class="prev">
+						<img src="_assets/img/arrow-left.png" alt="" />
+					</span></a>
 				</div>
 		</section>
 		<section class="three-boxs">
 			<div class="container">
 				<div class="row">
 					<div class="col-4 box-item animate" data-type="fadeIn" data-time="1000">
-						<div class="image-wrap">
-							<img src="_assets/img/box-image.png" alt="" />
+						<div class="item-wrap push-right">
+							<div class="image-wrap">
+								<img src="_assets/img/box-image.png" alt="" />
+							</div>
+							<h3>Fast Processor</h3>
+							<p>The eighth-generation Intel Core processors the MacBook Pro's processing performance reaches a whole new level.</p>
 						</div>
-						<h3>Fast Processor</h3>
-						<p>The eighth-generation Intel Core processors the MacBook Pro's processing performance reaches a whole new level.</p>
 					</div>
 					<div class="col-4 box-item animate" data-type="fadeIn" data-time="1300">
-						<div class="image-wrap">
-							<img src="_assets/img/box-image.png" alt="" />
+						<div class="item-wrap">
+							<div class="image-wrap">
+								<img src="_assets/img/box-image-02.png" alt="" />
+							</div>
+							<h3>Fast Processor</h3>
+							<p>The eighth-generation Intel Core processors the MacBook Pro's processing performance reaches a whole new level.</p>
 						</div>
-						<h3>Fast Processor</h3>
-						<p>The eighth-generation Intel Core processors the MacBook Pro's processing performance reaches a whole new level.</p>
 					</div>
 					<div class="col-4 box-item animate" data-type="fadeIn" data-time="1600">
-						<div class="image-wrap">
-							<img src="_assets/img/box-image.png" alt="" />
+						<div class="item-wrap push-left">
+							<div class="image-wrap">
+								<img src="_assets/img/box-image-03.png" alt="" />
+							</div>
+							<h3>Fast Processor</h3>
+							<p>The eighth-generation Intel Core processors the MacBook Pro's processing performance reaches a whole new level.</p>
 						</div>
-						<h3>Fast Processor</h3>
-						<p>The eighth-generation Intel Core processors the MacBook Pro's processing performance reaches a whole new level.</p>
 					</div>
 			</div>
 			</div>
@@ -184,7 +210,8 @@
 		</section>
 		<section class="image-wrap">
 			<div class="container">
-				<img src="_assets/img/bottom-image.png" alt="" />
+				<div class="sub-image-wrap">
+				</div>
 				<h2>Teknik Destek Hizmeti</h2>
 				<p>Tüm apple ürünleriniz için teknik destek ve yedek parça hizmeti.</p>
 				<a href="#">Detaylı Bilgi</a>
@@ -255,24 +282,28 @@
 					</ul>
 				</div>
 				<div class="col-4">
-					<h4>Teknik Servis</h4>
-					<ul>
-						<li><a href="#">Mac Pro</a></li>
-						<li><a href="#">iMac</a></li>
-						<li><a href="#">MacBook Pro</a></li>
-						<li><a href="#">MacBook Air</a></li>
-						<li><a href="#">MacBook</a></li>
-						<li><a href="#">Mac Mini</a></li>
-						<li><a href="#">iPad</a></li>
-						<li><a href="#">iPhone</a></li>
-						<li><a href="#">Aksesuar</a></li>
-					</ul>
+					<div class="row two-list">
+						<div class="col-md-6">
+							<h4>Teknik Servis</h4>
+							<ul>
+								<li><a href="#">Tamir Onarım</a></li>
+								<li><a href="#">Yedek Parça</a></li>
+							</ul>
+						</div>
+						<div class="col-md-6">
+							<h4>İletişim</h4>
+							<ul>
+								<li><a href="#">Bilgi Formu</a></li>
+								<li><a href="#">Harita</a></li>
+							</ul>
+						</div>
+					</div>
 				</div>
 				<div class="col-4 t-right">
 					<h4>MacPoint</h4>
 					<p>Gülbahar Mah. Cemal Sururi Sok. No:4/2 Şişli-Mecdiyeköy / İSTANBUL</p>
-					<a href="#" class="iPhone">+90 (552) 236 13 17</a>
-					<a href="#" class="iPhone">+90 (212) 274 06 07</a>
+					<a href="#" class="phone whatsapp"> <img src="_assets/img/ico-whatsapp.png" alt="" /> +90 (552) 236 13 17</a>
+					<a href="#" class="phone"> <img src="_assets/img/ico-phone.png" alt="" /> +90 (212) 274 06 07</a>
 				</div>
 			</div>
 			<p class="copy-right">Copyright  © 2018 MacPoint. All Rights Reserved</p>

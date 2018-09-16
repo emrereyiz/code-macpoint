@@ -7847,6 +7847,47 @@
       e.preventDefault();
       $(".slide-section-bottom .swiper-button-prev-3").trigger("click");
     });
+    
+    $(document).on('click', '.select-title .text', function(e){
+      e.preventDefault();
+      var $this = $(this);
+      $this.parents("h1").addClass("active");
+    });
+    
+    $(document).on('click', '.select-title li a', function(e){
+      e.preventDefault();
+      var $this = $(this);
+      $(".select-title .text").html($this.text());
+      $(".select-title.active").removeClass("active");
+    });
+    
+    $(document).on('click', '.select-title.active', function(e){
+      e.preventDefault();
+      var $this = $(this);
+      $this.removeClass("active");
+    });
+    
+    $(document).on('click', '.detail .detail-top .image-wrap li img', function(e){
+      e.preventDefault();
+      var $this = $(this),
+          src = $this.attr("src"),
+          src2 = $this.parents(".image-wrap").find(".big").attr("src");
+
+          $this.parents(".image-wrap").find(".big").attr("src",src);
+          $this.attr("src",src2);
+    });
+    
+    $(document).on('mouseover', '.has-sub', function(e){
+      e.preventDefault();
+      var $this = $(this);
+      $this.find("ul").stop().fadeIn();
+    });
+    
+    $(document).on('mouseleave', '.has-sub', function(e){
+      e.preventDefault();
+      var $this = $(this);
+          $this.find("ul").stop().fadeOut();
+    });
 
   },
   wowInit: function(){
